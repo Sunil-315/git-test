@@ -33,11 +33,14 @@ form{
 }
 
 label{
+    flex-basis: 120px;
+    flex-shrink: 0;
+    padding-right: 1rem;
+
     display: block;
     font-size: 0.875rem;
     font-weight: 500;
     color: mediumturquoise;
-    margin-bottom: 0.25rem;
 }
 
 input[type="text"],
@@ -61,6 +64,10 @@ input[type="password"]:focus{
 }
 
 .error-message{
+    flex-basis: 100%;
+    margin-left: 136px;
+
+
     color: red;
     font-size: 0.75rem;
     margin-top: 0.25rem;
@@ -133,4 +140,14 @@ button[type="submit"]:hover{
     color: #16a34a; 
     text-align: center;
     font-weight: 600;
+}
+
+.form-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-row input{
+    flex-grow: 1;
 }

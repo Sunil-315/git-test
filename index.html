@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Sign Up page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>
+            Create Your Account
+        </h1>
+        <form id="signupForm">
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="name" placeholder="first name ">
+            </div>
+            <div>
+                <label for="MiddleName">Middle Name</label>
+                <input type="text" id="MiddleName" name="name" placeholder="middle name ">
+            </div>
+            <div>
+                <label for="LastName">Last Name</label>
+                <input type="text" id="LastName" name="name" placeholder="last name ">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+            </div>
+            <div>
+                <label for="confirmemail">Confirm Email</label>
+                <input type="email" id="confirmemail" name="email" placeholder="Confirm email">
+                <p class="error-message" id="email-error"></p>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password">
+            </div>
+            <div>
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="confirm password">
+                <p class="error-message" id="password-error"></p>
+            </div>
+            <!-- Captcha -->
+            <div>
+                <label for="captchaInput">Verify you are human</label>
+                <div class="captcha-container">
+                    <span id="captchaText" class="captcha-text"></span>
+                    <button type="button" id="refreshCaptcha">Refresh</button>
+                </div>
+                <input type="text" input="captchaInput" placeholder="captcha">
+            </div>
+        </form>
+        <div id="progress-container">
+            <div id="progressbar"></div>    
+        </div>
+        <p id="successMessage"></p>
+    </div>
+</body>
+</html>
